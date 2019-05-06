@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/**** Reset css **/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  .slider {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .slide.current {
+    opacity: 1;
+  }
+
+  .slide .content {
+    position: absolute;
+    bottom: 50px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+  }
+  
+  .slide .content h1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(1000px);
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+  /*** buttons ***/
+  .buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+  }
+  .buttons button:hover {
+    background-color: #fff;
+    color: 	#000000;
+  }
+  .buttons button#next{
+      position: absolute;
+      width: 40px;
+      top: 50%;
+      right: 15px;
+  }
+ .buttons button#previous{
+    position: absolute;
+    width: 40px;
+    top: 50%;
+    left: 15px;
+}
+
+/* Backgorund slider Images */
+ 
+.slide:first-child {
+    background-image: url('slider-images/image1.jpg'); background-position: center; background-size:cover;
+  }
+.slide:nth-child(2) {
+    background-image: url('slider-images/image2.jpg'); background-position: center; background-size:cover;
+  }
+.slide:nth-child(3) {
+    background-image: url('slider-images/image3.jpg'); background-position: center; background-size:cover;
+  }
+.slide:nth-child(4) {
+    background-image: url('slider-images/image4.jpg'); background-position: center; background-size:cover;
+  }
+.slide:nth-child(5) {
+   background-image: url('slider-images/image5.jpg'); background-position: center; background-size:cover;
+} 
+.slide:nth-child(6)  {
+  background-image: url('slider-images/image6.jpg'); background-position: center; background-size:cover;
+
+}
+  
+  /** media query **/
+  @media (max-width: 500px ) {
+    .slide .content {
+      left: 0px;
+      bottom: -300px;   
+      width: 100%;
+    }  
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+  }
+
+
+
+    
+  

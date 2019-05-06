@@ -1,0 +1,134 @@
+/* Dashed red border */
+
+
+body{
+	 background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+   #banner-area{
+    background-image: url('images/bg2.jpg'); /*--edit image--*/
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar-header img {
+  border-radius: 50%;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  border:1px solid #bbb;
+  margin-right: 10px; 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+  color: red;
+}  
+
+/* Flaired edges, by Aidarous hr style */
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/* Single-direction drop shadow */
+
+hr.style-two {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+
+div.starter-template-ryan h1{
+	color: 	#8B0000;
+	font-family: 'Roboto', sans-serif;
+}
+div.starter-template-ryan{
+	font-size: 1.2em;
+	font-family: serif;
+  color:  black;
+}
+.starter-template-ryan.contact{
+    color:  #000000;
+}
+
+/*** footer css ***/
+div {
+    color: #000000;
+}
+
+
+
+/*HUSSEY Layout */
+.wrapper {
+	position: relative;
+	width: 620px;
+	margin: 40px auto;
+	padding: 40px;
+	background: white;
+	text-align: center;
+}
+
+.wrapper:before, .wrapper:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -5px;
+	width: 100%;
+	height: 100%;
+	background: #97917e;
+	z-index: -1;
+}
+
+.wrapper:before {
+	top: 10px;
+	left: -10px;
+	background: #514933;
+}
+
+#logo {
+	width: 240px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
